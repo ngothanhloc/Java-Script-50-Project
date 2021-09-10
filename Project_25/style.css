@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 214, 43);
+}
+
+.container {
+  height: 700px;
+  width: 1400px;
+  cursor: pointer;
+  transform: all 0.2s;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  font: 0;
+  border: 2px white solid;
+}
+
+.container.active {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/cursor */
+  cursor: grabbing;
+}
+
+.container.allowed {
+  cursor: not-allowed;
+}
+
+.item {
+  width: 700px;
+  height: 100%;
+  object-fit: cover;
+}
