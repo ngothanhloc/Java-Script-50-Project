@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 5rem;
+  margin-bottom: 6rem;
+}
+.form-control {
+  position: relative;
+  margin: 20px 0;
+  width: 30rem;
+}
+
+.form-control input {
+  border: 0;
+  border-bottom: 1rem solid #fddb3a;
+  outline: none;
+  display: block;
+  font-family: inherit;
+  padding: 15px 0;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  border-bottom-color: darkolivegreen;
+  outline: none;
+}
+
+.form-control label {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  font-size: 20px;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: darkolivegreen;
+  transform: translateY(-3rem);
+}
+
+/* Dynamic Element */
+.form-control label span {
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  min-width: 5px;
+}
