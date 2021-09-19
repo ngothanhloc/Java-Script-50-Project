@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://kit.fontawesome.com/fbadad80a0.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="style.css">
+    <title>The Comic Buddy App</title>
+</head>
+<body>
+    <div class="validation validation-success">Superhero Added</div>
+
+    <div class="validation validation-error">
+        Unable to Add SuperHero <br/>
+        Please Fill Out All Form Inputs
+    </div>
+
+    <h1>The Comic Buddy App</h1>
+    <div class="wrapper">
+        <!-- Superhero Entry -->
+        <div class="superhero-entry">
+            <form class="superhero-form">
+                <!-- Superhero Name -->
+                <div class="superhero-name">
+                    <labe for="name">SuperHero Name</labe>
+                    <input type="text" id="name" autofocus>
+                </div>
+                <!-- Superhero Universe -->
+                <div class="superhero-universe">
+                    <labe for="universe">SuperHero Universe</labe>
+                    <input type="text" id="universe">
+                </div>
+                <!-- Superhero Power -->
+                <div class="superhero-power">
+                    <labe for="power">SuperHero Power</labe>
+                    <input type="text" id="power">
+                </div>
+                <!-- Sunmmit Button -->
+                <button class="add-superhero">Add Superhero</button>
+            </form>
+        </div>
+        <!-- Superhero List -->
+        <div class="superhero-list">
+            <!-- Header -->
+            <div class="superhero-list-header">
+                <h2>Name</h2>
+                <h2>Universe</h2>
+                <h2>Power</h2>
+                <h2>Power</h2>
+            </div>
+
+            <!-- Data -->
+            <div class="superhero-list-data"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
